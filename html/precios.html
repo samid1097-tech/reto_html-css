@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios y pedidos | Barbería La Navaja</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Barbería La Navaja</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="precios.html">Precios y pedidos</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+            <h2>Precios y pedidos</h2>
+            <p>Mira los precios y pide tu cita.</p>
+            <p>
+                ¿No sabes dónde estamos?
+                <a href="index.html#ubicacion">Mira cómo llegar</a>
+            </p>
+        </section>
+
+        <section id="tabla">
+            <h2>Tarifas</h2>
+
+            <table>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Servicio</th>
+                    <th>Precio</th>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">Cortes</th>
+                    <td>Corte clásico</td>
+                    <td>$25.000</td>
+                </tr>
+
+                <tr>
+                    <td>Corte degradado</td>
+                    <td>$28.000</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">Barba</th>
+                    <td>Perfilado</td>
+                    <td>$12.000</td>
+                </tr>
+
+                <tr>
+                    <td>Afeitado con toalla caliente</td>
+                    <td>$18.000</td>
+                </tr>
+
+                <tr>
+                    <th>Combo</th>
+                    <td>Corte clásico + barba</td>
+                    <td><del>$43.000</del> <strong>$38.000</strong></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        Niños menores de 10 años: 10 % de descuento en cualquier corte.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="pedido">
+            <h2>Pide tu cita</h2>
+
+            <form action="https://httpbin.org/post" method="post">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="fecha">Día que prefieres</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="mensaje">Cuéntanos cómo lo quieres</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                <button type="submit">Enviar pedido</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Barbería La Navaja</strong></p>
+        <p>Carrera 27 #34-18, Bucaramanga</p>
+        <p>WhatsApp: +57 300 123 4567</p>
+        <a href="https://www.instagram.com/">Instagram</a>
+    </footer>
+
+</body>
+</html>
